@@ -1,3 +1,8 @@
 # frozen_string_literal: true
 
-puts 'Yes, we required this file'
+# Capture Ruby's Main obj in a constant
+MAIN = self
+
+require_relative 'jinatra/base'
+
+MAIN.extend Jinatra::Methods
